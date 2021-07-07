@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1">
+	<meta name = "author" value = "Brian Estigarribia Maia">
+	<meta name = "description" value = "JS IFRS Curso">
+	<title>Eventos de Input</title>
+	<script src = "input.js"></script>
+</head>
+<body>
+	<h1>Eventos de Input</h1>
+	<form name = "formTeste" onsubmit = "return submeter()" onreset = "resetar()">
+		<label for = "nome">Nome:</label>
+		<input type = "text" id = "nome" name = "nome" onblur ="sairDoCampo" onchange = "mudar()" onfocus =
+		"entrarNoCampo()" onselect = "selecionar()" onkeydown = "teclaBaixo" onkeyup = "teclaCima"> <br>
+		<button type = "submit">Enviar</button>
+		<button type = "reset">Limpar</button>
+	</form>
+	<br>
+	<h2>Log de ocorrencias</h2>
+	<div id = "log">
+	</div>
+</body>
+</html>
